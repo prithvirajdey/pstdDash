@@ -18,9 +18,11 @@ export class PieChart {
 
   public charts: Array<Object>;
   private _init = false;
+  private _totalTrans = 0;
 
   constructor(private _pieChartService: PieChartService) {
     this.charts = this._pieChartService.getData();
+    this._totalTrans = 147295;
   }
 
   ngAfterViewInit() {
@@ -37,9 +39,10 @@ export class PieChart {
       let chart = $(this);
       chart.easyPieChart({
         easing: 'easeOutBounce',
-        onStep: function (from, to, percent) {
-          $(this.el).find('.percent').text(Math.round(percent));
-        },
+         onStep: function (from, to, percent) {
+           // console.log(from);console.log(to);console.log(percent);
+           $(this.el).find('.percent').text(Math.round(percent));
+         },
         barColor: $(this).attr('data-rel'),
         trackColor: 'rgba(0,0,0,0)',
         size: 84,

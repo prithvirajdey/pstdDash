@@ -12,24 +12,24 @@ export class PieChartService {
     return [
       {
         color: pieColor,
-        description: 'New Visits',
+        description: 'Credits',
         stats: '57,820',
-        icon: 'person',
-      }, {
-        color: pieColor,
-        description: 'Purchases',
-        stats: '$ 89,745',
         icon: 'money',
       }, {
         color: pieColor,
-        description: 'Active Users',
-        stats: '178,391',
-        icon: 'face',
+        description: 'Debits',
+        stats: '89,745',
+        icon: 'money',
       }, {
         color: pieColor,
-        description: 'Returned',
+        description: 'Dollar %',
+        stats: '178,391',
+        icon: 'money',
+      }, {
+        color: pieColor,
+        description: 'Euro %',
         stats: '32,592',
-        icon: 'refresh',
+        icon: 'money',
       }
     ];
   }

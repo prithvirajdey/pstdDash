@@ -1,0 +1,57 @@
+2016-06-15T00:03:47.882447000 0.035480s notice: In recursion: removing file 'D:\\E\\Hackathon\\ng2-admin-master\\ng2-admin-master\\rethinkdb_data\\tmp'
+2016-06-15T00:03:47.883447000 0.036633s warn: Trying to delete non-existent file 'D:\\E\\Hackathon\\ng2-admin-master\\ng2-admin-master\\rethinkdb_data\\tmp'
+2016-06-15T00:03:47.890447400 0.043686s notice: Initializing directory D:\\E\\Hackathon\\ng2-admin-master\\ng2-admin-master\\rethinkdb_data
+2016-06-15T00:03:47.901448000 0.054580s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory 'D:\\E\\Hackathon\\ng2-admin-master\\ng2-admin-master\\rethinkdb_data' did not already exist or is empty.)
+2016-06-15T00:03:47.901448001 0.054740s notice: Running rethinkdb 2.3.3-windows (MSC 190023506)...
+2016-06-15T00:03:47.901448002 0.054812s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2016-06-15T00:03:47.901448003 0.054875s notice: Loading data from directory D:\\E\\Hackathon\\ng2-admin-master\\ng2-admin-master\\rethinkdb_data
+2016-06-15T00:03:48.567486100 0.720483s info: Cache size is set to 200 MB
+2016-06-15T00:03:48.590487500 0.744134s notice: Listening for intracluster connections on port 54910
+2016-06-15T00:03:48.600488000 0.754350s notice: Listening for client driver connections on port 54911
+2016-06-15T00:03:48.601488100 0.754653s notice: Listening for administrative HTTP connections on port 54912
+2016-06-15T00:03:48.601488101 0.754688s notice: Listening on cluster address: 127.0.0.1
+2016-06-15T00:03:48.601488102 0.754717s notice: Listening on driver address: 127.0.0.1
+2016-06-15T00:03:48.601488103 0.754718s notice: Listening on http address: 127.0.0.1
+2016-06-15T00:03:48.601488104 0.754723s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-06-15T00:03:48.601488105 0.754736s notice: Server ready, "BLR_LP33ABR8D_pcu" cb9faa28-29e0-4cd7-a620-dcadec133955
+2016-06-15T00:03:49.935564400 2.089374s info: Table 1d8d89cb-e27e-41ee-9c6f-2b2cf29fe489: Starting a new Raft election for term 1.
+2016-06-15T00:03:49.939564600 2.092718s info: Table 1d8d89cb-e27e-41ee-9c6f-2b2cf29fe489: Added replica on this server.
+2016-06-15T00:03:50.063571700 2.216563s notice: A newer version of the RethinkDB server is available: 2.3.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-06-15T00:03:50.147576500 2.300771s info: Table 1d8d89cb-e27e-41ee-9c6f-2b2cf29fe489: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-15T00:03:51.910677400 4.063592s info: Table 53b7b9e2-dc9a-4229-9fa9-4bbbdcb5e781: Starting a new Raft election for term 1.
+2016-06-15T00:03:51.910677401 4.063986s info: Table 53b7b9e2-dc9a-4229-9fa9-4bbbdcb5e781: Added replica on this server.
+2016-06-15T00:03:51.959680200 4.113355s info: Table 53b7b9e2-dc9a-4229-9fa9-4bbbdcb5e781: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-15T00:03:55.079858600 7.232775s info: Table 2b684cfd-efb1-4440-b679-ad51dd2cb7fb: Starting a new Raft election for term 1.
+2016-06-15T00:03:55.079858601 7.233228s info: Table 2b684cfd-efb1-4440-b679-ad51dd2cb7fb: Added replica on this server.
+2016-06-15T00:03:55.312871900 7.465964s info: Table 2b684cfd-efb1-4440-b679-ad51dd2cb7fb: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-15T00:03:58.255040200 10.408511s info: Table 78cc3c10-4d49-4419-9168-de2e0bdb51e8: Starting a new Raft election for term 1.
+2016-06-15T00:03:58.256040300 10.409307s info: Table 78cc3c10-4d49-4419-9168-de2e0bdb51e8: Added replica on this server.
+2016-06-15T00:03:58.319043900 10.471931s info: Table 78cc3c10-4d49-4419-9168-de2e0bdb51e8: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-15T01:48:43.370909000 6295.302882s notice: Server got Control-C; shutting down...
+2016-06-15T09:18:15.410545800 0.074129s notice: Running rethinkdb 2.3.3-windows (MSC 190023506)...
+2016-06-15T09:18:15.428546800 0.091307s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2016-06-15T09:18:15.428546801 0.091495s notice: Loading data from directory D:\\E\\Hackathon\\ng2-admin-master\\ng2-admin-master\\rethinkdb_data
+2016-06-15T09:18:15.780566900 0.443945s info: Cache size is set to 200 MB
+2016-06-15T09:18:15.813568800 0.476593s notice: Listening for intracluster connections on port 50820
+2016-06-15T09:18:16.048582300 0.711239s notice: Listening for client driver connections on port 50821
+2016-06-15T09:18:16.048582301 0.711552s notice: Listening for administrative HTTP connections on port 50822
+2016-06-15T09:18:16.048582302 0.711586s notice: Listening on cluster address: 127.0.0.1
+2016-06-15T09:18:16.048582303 0.711596s notice: Listening on driver address: 127.0.0.1
+2016-06-15T09:18:16.048582304 0.711598s notice: Listening on http address: 127.0.0.1
+2016-06-15T09:18:16.048582305 0.711600s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-06-15T09:18:16.048582306 0.711610s notice: Server ready, "BLR_LP33ABR8D_pcu" cb9faa28-29e0-4cd7-a620-dcadec133955
+2016-06-15T09:18:16.998636600 1.661555s info: Table 2b684cfd-efb1-4440-b679-ad51dd2cb7fb: Starting a new Raft election for term 2.
+2016-06-15T09:18:17.088641700 1.751620s info: Table 2b684cfd-efb1-4440-b679-ad51dd2cb7fb: This server is Raft leader for term 2. Latest log index is 4.
+2016-06-15T09:18:17.678675500 2.341437s info: Table 53b7b9e2-dc9a-4229-9fa9-4bbbdcb5e781: Starting a new Raft election for term 2.
+2016-06-15T09:18:17.779681300 2.443105s info: Table 53b7b9e2-dc9a-4229-9fa9-4bbbdcb5e781: This server is Raft leader for term 2. Latest log index is 3.
+2016-06-15T09:18:17.807682900 2.470414s info: Table 78cc3c10-4d49-4419-9168-de2e0bdb51e8: Starting a new Raft election for term 2.
+2016-06-15T09:18:17.821683700 2.484541s info: Table 1d8d89cb-e27e-41ee-9c6f-2b2cf29fe489: Starting a new Raft election for term 2.
+2016-06-15T09:18:17.996693700 2.660203s info: Table 78cc3c10-4d49-4419-9168-de2e0bdb51e8: This server is Raft leader for term 2. Latest log index is 3.
+2016-06-15T09:18:17.997693700 2.660344s info: Table 1d8d89cb-e27e-41ee-9c6f-2b2cf29fe489: This server is Raft leader for term 2. Latest log index is 3.
+2016-06-15T09:18:20.094813700 4.757880s notice: A newer version of the RethinkDB server is available: 2.3.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-06-15T14:34:14.326851600 18958.659060s info: Table 6384dac0-84f1-446e-9a9d-52c491a94463: Starting a new Raft election for term 1.
+2016-06-15T14:34:14.523851600 18958.856009s info: Table 6384dac0-84f1-446e-9a9d-52c491a94463: Added replica on this server.
+2016-06-15T14:34:14.730851600 18959.063069s info: Table 6384dac0-84f1-446e-9a9d-52c491a94463: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-15T16:47:03.698956300 26927.804719s info: Table 13fbea9b-ae24-4e4d-ac65-62a094437f83: Starting a new Raft election for term 1.
+2016-06-15T16:47:03.698956301 26927.804970s info: Table 13fbea9b-ae24-4e4d-ac65-62a094437f83: Added replica on this server.
+2016-06-15T16:47:03.810967500 26927.917052s info: Table 13fbea9b-ae24-4e4d-ac65-62a094437f83: This server is Raft leader for term 1. Latest log index is 0.
