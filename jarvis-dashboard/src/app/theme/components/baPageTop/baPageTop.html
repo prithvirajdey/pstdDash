@@ -1,0 +1,11 @@
+<div class="page-top clearfix" baScrollPosition maxHeight="50" (scrollChange)="scrolledChanged($event)"
+     [ngClass]="{scrolled: isScrolled}">
+  <a href="#/pages/dashboard" class="al-logo clearfix"><span>  Iron Bank of Braavos</span></a>
+  <div class="user-profile clearfix">
+    <div class="dropdown al-user-profile">
+      <a class="profile-toggle-link dropdown-toggle" id="user-profile-dd" data-toggle="dropdown" aria-expanded="false">
+        <img src="{{ ( 'iron' | baProfilePicture ) }}">
+      </a>
+    </div>
+  </div>
+</div>
