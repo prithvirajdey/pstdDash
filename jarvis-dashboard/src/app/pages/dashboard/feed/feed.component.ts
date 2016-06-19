@@ -13,6 +13,7 @@ import 'rxjs/add/operator/merge';
 import 'rxjs/add/operator/filter';
 
 const Horizon = require('@horizon/client');
+var socket;
 
 interface Transaction {
   accountId: number,
@@ -35,7 +36,7 @@ interface Transaction {
 })
 export class Feed {
   
-  socket: any;
+  // socket: any;
   transactions: Array<Transaction>;
 
   public feed:Array<Object>;
@@ -46,8 +47,8 @@ export class Feed {
 
   ngOnInit() {
     const horizon = Horizon({ host: 'localhost:8181' });
-    this.socket = horizon("transactionFeed");
-    this.socket.watch().subscribe((item) => { this.aggregateData(item) });
+    socket = horizon("transactionFeed");
+    socket.watch().subscribe((item) => { this.aggregateData(item) });
     this._loadFeed();
     this.storeTransaction();
   }
@@ -62,6 +63,7 @@ export class Feed {
         var temp = Object.assign({}, this.feed[i]);
         this.feed.splice(i, 1);
         temp.time = new Date() + "";
+        temp.text = item[0].amount + "";
         this.feed.unshift(Object.assign({}, temp));
       }
     }
@@ -72,8 +74,8 @@ export class Feed {
     setTimeout(function() {
     console.log('storing feed');
     let trans: Transaction = {
-      accountId: 3,
-      amount: Math.random()* (100009990 - 10000999) + 10000999,
+      accountId: 2000000016,
+      amount: 1000000,
       createdAt: new Date('2016-06-15T04:01:34.169Z'),
       currency: 'USD',
       id: 3,
@@ -81,8 +83,8 @@ export class Feed {
       source: 'source',
       status: 'status'
     }
-    this.socket.store(trans);
-    }, 900000);
+    socket.store(trans);
+    }, 120000);
     
   }
 

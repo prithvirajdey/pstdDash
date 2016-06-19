@@ -15,7 +15,7 @@ export class ChartistJsService {
       }
     },
     creditLineData: {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+      labels: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       series: [
         [1500, 1600, 2000, 2300, 3000, 4000,2500]
         // [1500, 2100, 3000, 3300, 4000, 2000, 4800],
@@ -33,7 +33,7 @@ export class ChartistJsService {
       }
     },
     debitLineData: {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+      labels: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       series: [
         [150, 160, 200, 230, 300, 560, 410]
         // [100, 120, 300, 330, 400],

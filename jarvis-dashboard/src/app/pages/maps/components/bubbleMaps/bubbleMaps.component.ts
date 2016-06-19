@@ -48,9 +48,9 @@ export class BubbleMaps {
     this.transactions = [];
     let layoutColors = this._baConfig.get().colors;
     this.mapData = [
-      {'code': 'GB', 'name': 'United Kingdom', 'value': 624174317, 'color': layoutColors.warning},
-      {'code': 'US', 'name': 'United States', 'value': 313085389, 'color': layoutColors.primary},
-      {'code': 'CA', 'name': 'Canada', 'value': 34349598, 'color': layoutColors.primary}
+      {'code': 'GB', 'name': 'United Kingdom', 'value': 158278, 'color': layoutColors.warning},
+      {'code': 'US', 'name': 'United States', 'value': 195000, 'color': layoutColors.primary},
+      {'code': 'CA', 'name': 'Canada', 'value': 5000, 'color': layoutColors.primary}
     ];
   }
   

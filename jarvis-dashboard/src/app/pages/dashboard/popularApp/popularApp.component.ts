@@ -37,8 +37,9 @@ export class PopularApp {
   ngOnInit() {
     
      const horizon = Horizon({ host: 'localhost:8181' });
-     this.socket = horizon("popular");
-     this.socket.watch().subscribe((item) => { 
+     this.socket = horizon("popularApp");
+     this.socket.watch().subscribe((item) => {
+        console.log("adding popular", item);
         this.accountId = item[item.length-1].arrangementId;
         this.creditAmount = item[0].reduction;
        });
@@ -49,10 +50,10 @@ export class PopularApp {
   
   // Temporary function to store data in horizon
   storePopular() {
-    console.log('storing');
+    console.log('storing popular');
     let pop: Popular = {
-      arrangementId: 1,
-      reduction: 56844
+      arrangementId: 2000000055,
+      reduction: 5608443,
     }
     this.socket.store(pop);
     
