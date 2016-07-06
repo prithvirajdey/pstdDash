@@ -1,4 +1,5 @@
 import {Component, ViewEncapsulation} from '@angular/core';
+import {HTTP_PROVIDERS, Http, Headers, Response} from '@angular/http';
 
 import {BaCard} from '../../../theme/components';
 import {PieChartService} from './pieChart.service';
@@ -43,18 +44,23 @@ export class PieChart {
   private _totalTrans = 0;
   socket: any;
   transactions: Array<Transaction>;
+  public headers;
 
-  constructor(private _pieChartService: PieChartService) {
+
+  constructor(private _pieChartService: PieChartService, public http: Http) {
     this.charts = this._pieChartService.getData();
     this._totalTrans = 358278;
     this.transactions = [];
+    this.headers = new Headers();
+    this.headers.append('Content-Type', 'application/json');
+    this.headers.append('Access-Control-Allow-Origin', '*');
   }
   
   ngOnInit() {
     const horizon = Horizon({ host: 'localhost:8181' });
     this.socket = horizon("transactionPie");
     this.socket.watch().subscribe((item) => { this.aggregateData(item) });
-    this.storeTransaction();     
+    this.storeTransaction();   
   }
 
   ngAfterViewInit() {
@@ -63,6 +69,17 @@ export class PieChart {
       this._updatePieCharts();
       this._init = true;
     }
+  }
+  
+  readRest(){
+    console.log('calling rest');
+    this.http.get('http://192.168.0.188:4000/transactions/user-feed')
+      .map((res:Response) => res.json())
+      .subscribe(
+        data => { console.log(data);},
+        err => console.error(err),
+        () => console.log('done')
+      );
   }
   
   // Temporary function to store data in horizon
@@ -95,6 +112,8 @@ export class PieChart {
       this.charts[1].stats = this.charts[1].stats + 1;
     }
     this._updatePieCharts();
+    
+    // this.readRest();  
   }
 
   private _loadPieCharts() {

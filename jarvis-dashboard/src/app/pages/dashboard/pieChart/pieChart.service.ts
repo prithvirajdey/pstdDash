@@ -13,22 +13,22 @@ export class PieChartService {
       {
         color: pieColor,
         description: 'Credits',
-        stats: 57820,
+        stats: 257533,
         icon: 'money',
       }, {
         color: pieColor,
         description: 'Debits',
-        stats: 89745,
+        stats: 100745,
         icon: 'money',
       }, {
         color: pieColor,
         description: 'Dollar %',
-        stats: 178391,
+        stats: 190546,
         icon: 'money',
       }, {
         color: pieColor,
-        description: 'Euro %',
-        stats: 32592,
+        description: 'GBP %',
+        stats: 167732,
         icon: 'money',
       }
     ];

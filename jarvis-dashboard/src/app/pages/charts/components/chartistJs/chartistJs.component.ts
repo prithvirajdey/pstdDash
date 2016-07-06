@@ -58,7 +58,8 @@ export class ChartistJs {
   
   aggregateData(item){
     this.transactions.push(item[0]);
-    var month = item[0].createdAt.getMonth();
+    var month = item[0].createdAt.getMonth() + 1;
+    console.log('month', month);
     if(item[0].paymentType == 'CREDIT'){
       this.data.creditLineData.series[0][month] = this.data.creditLineData.series[0][month] + item[0].amount;
     }
