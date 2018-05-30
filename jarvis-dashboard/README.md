@@ -1,50 +1,64 @@
-# Admin panel framework based on Angular 2, Bootstrap 4 and Webpack
-
-Admin template made with :heart:  by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this template first!
-
-### Demo
-
-<a target="_blank" href="http://akveo.com/ng2-admin/"><img src="http://i.imgur.com/QK9AzHj.jpg" width="600" alt="Sky Blue"/></a>
-
-<a target="_blank" href="http://akveo.com/ng2-admin/">Live Demo</a>
-
-## Angular 1.x version
-Here you can find Angular 1.x based version: [Blur Admin](http://akveo.github.io/blur-admin/)
+# Just A Rather Very Intelligent System (J.A.R.V.I.S)
+A Realtime Streaming Dashboard of financial transactions
  
-## Documentation
-Installation, customization and other useful articles: https://akveo.github.io/ng2-admin/
+### Technologies and architecture used
+JARVIS uses a number of open source tools:
 
-## Based on
-Angular 2, Bootstrap 4, Webpack and lots of awesome modules and plugins
+* [Rethinkdb] - The open source database for the real time web !
+* [Horizon.i.o] - The real time JavaScript backend !
+* [AngularJS 2] - The JavaScript framework for web applications !
+* [Node.js] - An open-source, cross-platform runtime environment for developing server-side Web ! 
+* [Express.js] - A Node.js web application server framework, designed for building single-page, multi-page, and hybrid web applications !
+* [ng2-admin] - Admin panel framework based on Angular 2, Bootstrap 4 and Webpack ! 
 
-## How can I support developers?
-- Star our GitHub repo :star:
-- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
-- Follow us on [Twitter](https://twitter.com/akveo_inc) :feet:
-- Like our page on [Facebook](https://www.facebook.com/akveo/) :thumbsup:
+### What your code is designed for 
+It is designed for building up a realtime streaming dashboard for the banks to monitor their financial transactions in REAL TIME . The demand for stream processing is increasing a lot these days. The reason is that often processing big volumes of data is not enough.
 
-## Can I hire you guys?
-Yes!  Visit [our homepage](http://akveo.com/) or simply leave us a note to [contact@akveo.com](mailto:contact@akveo.com). We will be happy to work with you!
+Data has to be processed fast, so that a firm can react to changing business conditions in real time. At this moment Big data is a buzzword which comes with three V's Volume, Velocity and Variety. This huge data posses a challenge of fast processing of data. JARVIS has the solution for both of these business problems through the technologies it uses. Jarvis is built up on a backend server Rethinkdb and Node.js, Javascript client library and Horizon.
 
-## Features
-* TypeScript
-* Webpack
-* Responsive layout
-* High resolution
-* Bootstrap 4 CSS Framework
-* Sass
-* Angular 2
-* jQuery
-* Charts (Chartist, Chart.js)
-* Maps (Google, Leaflet, amMap)
-* and many more!
+### What your code was written in 
+ - A backend server built with Node.js and RethinkDB that supports data persistence, realtime streams, input validation, user authentication, and permissions
+ - A JavaScript client library that developers can use on the frontend to store JSON documents in the database, perform queries, and subscribe to live updates
+ - A command-line tool that can generate project templates, start up a local Horizon development server, and help you deploy your Horizon application to the cloud
+ - Horizon is an open source software which will watch for change feeds or live updates in Rethinkdb and push it to the front end. It eliminates repetitive boilerplate and tedious steps like hand-writing CRUD endpoints, authentication, and session management.
+ - Node.js
+ - Angular 2
+ - ng2-admin
 
-##License
-[MIT](LICENSE.txt) license.
+#### Open source or proprietary software used 
+ - Rethinkdb - open source
+ - Horizeon - open source
+ - Node.js - open source
+ - Angular 2 - open source
+ - Boilerplated dashboard form ng2-admin - open source
 
-### From akveo
+### Why is it cool
+J.A.R.V.I.S is cool because its built on open source tools + cool UI + real time feed + easy to develop + Mark Zukerburg is planning to build it and hey Iron Man has it and we have it too!
+ 
+### Installation
 
-Enjoy :metal:
-We're always happy to hear your feedback!
+JARVIS requires [Node.js](https://nodejs.org/) v6+ to run.
 
-# Test
+### Rethinkdb
+You need Rethinkdb installed globally:
+
+Download link for [RethinkDB](https://www.rethinkdb.com/docs/install/windows/)
+
+```sh
+Press Win + X and click “Command Prompt”; or
+Open the Start Menu, click “Run,” and type “cmd” ENTER
+```
+### Horizon
+Before installing Horizon, you must install the RethinkDB server. 
+
+Install Horizon from npm:
+```sh
+npm install -g horizon
+```
+
+**Free Software, Hell Yeah!**
+
+   [RethinkDB]: <https://www.rethinkdb.com/>
+   [Horizon]: <http://horizon.io/>
+   [Node.js]: <https://nodejs.org/en/>
+   [AngularJS]: <http://angularjs.org>
